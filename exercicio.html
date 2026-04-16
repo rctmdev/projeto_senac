@@ -1,0 +1,141 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="application-name" content="Projeto SSSenac">
+    <meta name="author" content="DevCazzolli">
+    <meta name="description" content="SSSenac, Sistema de Saúde Senac, Saúde do Cidadão, funções básicas de saúde">
+    <meta name="language" content="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac - Index</title>
+    <link rel="shortcut icon" href="img/imagem 01.jpeg" type="image/x-icon">
+</head>
+
+<body>
+
+    <main>
+
+        <section style="margin: 0 auto; padding: 5px; width: 65%;">
+
+            <h1> Formulario de preenchimento de informações sobre o paciente </h1>
+
+            <form action="#" method="get">
+                <fieldset> 
+                    <legend><strong> Dados Pessoais </strong></legend>
+
+                    <label for="nome"> *Nome: </label>
+                    <input type="text" id="nome" name="none" autofocus minlength="3" max="100" /><br>
+                    <br>
+
+                    <label for="data"> *Data de Nascimento: </label>
+                    <input type="date" id="data" name="data" />
+
+                    <label for="genero">  *Sexo: </label>
+                    <input type="radio" id="genero" name="genero" value="M"/> Masculino 
+                    <input type="radio" id="genero" name="genero" value="F" /> Feminino 
+                    <input type="radio" id="genero" name="genero" value="U" /> Prefiro não informar
+
+                    <label for="profissao"> *Profissão: </label>
+                    <input type="text" id="profissao" name="profissao" minlength="3" max="50" /><br>
+                    <br>
+
+                    <label for="endereco"> *Endereço: </label>
+                    <input type="text" id="endereco" name="endereco" minlength="3" max="50" />
+
+                    <label for="numero"> *Número: </label>
+                    <input type="number" id="numero" name="numero" min="0" max="100" />
+
+                    <label for="bairro"> *Bairro: </label>
+                    <input type="text" id="bairro" name="bairro" />
+
+                    <label for="cep"> *CEP: </label>
+                    <input type="tel" id="cep" name="cep" maxlength="8" pattern="[0-9]{5}/ [0-9]{3}" placeholder="00.000-000" /><br><br>
+
+                    <label for="cidade"> *Cidade: </label>
+                    <input type="text" id="cidade" name="cidade" />
+
+                    <label for="estado"> *Estado: </label>
+                    <input type="text" id="estado" name="estado" />
+
+                    <label for="contato"> *Telefone de contato: </label>
+                    <input type="tel" id="contato" name="contato" maxlength="11" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
+                        placeholder="(xx) xxxxx-xxxx" /> <br><br>
+
+                    <label for="email"> * E-mail: </label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@mail.com" />
+
+                    <label for="contato_emergencia"> *Contato de emergência: </label>
+                    <input type="tel" id="contato_emergencia" name="contato_emergencia" maxlength="11" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" 
+                        placeholder="(xx) xxxxx-xxxx" /> 
+
+                    <label for="responsavel"> *Nome do responsável: </label>
+                    <input type="text" id="responsavel" name="responsavel" /><br><br>
+
+                    <label for="observacoes"> *Indicação e observações gerais: </label>
+                    <input type="text" id="observacoes" name="observacoes" />
+                </fieldset>
+
+                <fieldset> 
+                    <legend><strong> Histórico </strong></legend>
+
+                    <label for="doencas"> *Doenças pré existentes? </label>
+                    <input type="text" id="doencas" name="doencas" /><br><br>
+
+                    <label for="alergias"> *Alergias? </label>
+                    <input type="text" id="alergias" name="alergias" /><br><br>
+
+                    <label for="medicamentos"> *Medicamento de uso contínuo? </label>
+                    <input type="text" id="medicamentos" name="medicamentos" /><br><br>
+
+                    <label for="cirurgias"> *Cirurgias anteriores? </label>
+                    <input type="text" id="cirurgias" name="cirurgias" /><br><br>
+
+                    <label for="doencas_cronicas"> *Você possui alguma doença crônica? (Ex: Diabetes, Hipertensão, Asma) </label>
+                    <input type="text" id="doencas_cronicas" name="doencas_cronicas" /><br><br>
+
+                    <label for="problemas_cardiacos"> *Possui algum problema cardíaco ou circulatório? </label>
+                    <input type="text" id="problemas_cardiacos" name="problemas_cardiacos" /><br><br>
+                </fieldset>
+
+                <fieldset> 
+                    <legend><strong> Histórico </strong></legend>
+
+                    *Como você avalia sua saúde atualmente?
+                    <input type="radio" id="saude_atual" name="saude_atual" value="Ex"/> Excelente 
+                    <input type="radio" id="saude_atual" name="saude_atual" value="Bo" /> Boa 
+                    <input type="radio" id="saude_atual" name="saude_atual" value="Re" /> Regular
+                    <input type="radio" id="saude_atual" name="saude_atual" value="Ru" /> Ruim <br><br>
+
+                    <label for="insomnia"> *Tem dificuldade para dormir ou sofre insônia? </label>
+                    <input type="text" id="insomnia" name="insomnia" /><br><br>
+
+                    <label for="alergias"> *Alergias? </label>
+                    <input type="text" id="alergias" name="alergias" /><br><br>
+
+                    <label for="episodios_dor"> *Tem episódios frequentes de dor ou fadiga? </label>
+                    <input type="text" id="episodios_dor" name="episodios_dor" /><br><br>
+
+                    <label for="atividades_fisicas"> *Pratica atividades físicas com regularidade? </label>
+                    <input type="text" id="atividades_fisicas" name="atividades_fisicas" /><br><br>
+
+                    <label for="fumo"> *Fuma ou já fumou? Com que frequência? </label>
+                    <input type="text" id="fumo" name="fumo" /><br><br>
+
+                    <label for="bebidas"> *Consome bebidas alcoólicas? Em qual frequência? </label>
+                    <input type="text" id="bebidas" name="bebidas" /><br><br>
+
+                </fieldset>
+
+                <input type="reset" value="Limpar campos"/>
+                <input type="submit" value="Enviar dados"/>
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
