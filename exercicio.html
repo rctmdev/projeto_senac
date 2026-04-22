@@ -20,7 +20,7 @@
             <h1> Formulario de preenchimento de informações sobre o paciente </h1>
 
             <form action="#" method="get">
-                <fieldset> 
+                <fieldset>
                     <legend><strong> Dados Pessoais </strong></legend>
 
                     <label for="nome"> *Nome: </label>
@@ -30,9 +30,9 @@
                     <label for="data"> *Data de Nascimento: </label>
                     <input type="date" id="data" name="data" />
 
-                    <label for="genero">  *Sexo: </label>
-                    <input type="radio" id="genero" name="genero" value="M"/> Masculino 
-                    <input type="radio" id="genero" name="genero" value="F" /> Feminino 
+                    <label for="genero"> *Sexo: </label>
+                    <input type="radio" id="genero" name="genero" value="M" /> Masculino
+                    <input type="radio" id="genero" name="genero" value="F" /> Feminino
                     <input type="radio" id="genero" name="genero" value="U" /> Prefiro não informar
 
                     <label for="profissao"> *Profissão: </label>
@@ -49,13 +49,43 @@
                     <input type="text" id="bairro" name="bairro" />
 
                     <label for="cep"> *CEP: </label>
-                    <input type="tel" id="cep" name="cep" maxlength="8" pattern="[0-9]{5}/ [0-9]{3}" placeholder="00.000-000" /><br><br>
+                    <input type="tel" id="cep" name="cep" maxlength="8" pattern="[0-9]{5}/ [0-9]{3}"
+                        placeholder="00.000-000" /><br><br>
 
                     <label for="cidade"> *Cidade: </label>
                     <input type="text" id="cidade" name="cidade" />
 
                     <label for="estado"> *Estado: </label>
-                    <input type="text" id="estado" name="estado" />
+                    <select id="estado" name="estado">
+                        <option value="0"> Selecione </option>
+                        <option value="1"> AC </option>
+                        <option value="2"> AL </option>
+                        <option value="3"> AP </option>
+                        <option value="4"> AM </option>
+                        <option value="5"> BA </option>
+                        <option value="6"> CE </option>
+                        <option value="7"> DF </option>
+                        <option value="8"> ES </option>
+                        <option value="9"> GO </option>
+                        <option value="10"> MA </option>
+                        <option value="11"> MT </option>
+                        <option value="12"> MS </option>
+                        <option value="13"> MG </option>
+                        <option value="14"> PA </option>
+                        <option value="15"> PB </option>    
+                        <option value="16"> PR </option>
+                        <option value="17"> PE </option>
+                        <option value="18"> PI </option>
+                        <option value="19"> RJ </option>
+                        <option value="20"> RN </option>
+                        <option value="21"> RS </option>
+                        <option value="22"> RO </option>
+                        <option value="23"> RR </option>    
+                        <option value="24"> SC </option>
+                        <option value="25"> SP </option>
+                        <option value="26"> SE </option>
+                        <option value="27"> TO </option>
+                    </select>
 
                     <label for="contato"> *Telefone de contato: </label>
                     <input type="tel" id="contato" name="contato" maxlength="11" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
@@ -65,8 +95,8 @@
                     <input type="email" id="email" name="email" required placeholder="exemplo@mail.com" />
 
                     <label for="contato_emergencia"> *Contato de emergência: </label>
-                    <input type="tel" id="contato_emergencia" name="contato_emergencia" maxlength="11" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" 
-                        placeholder="(xx) xxxxx-xxxx" /> 
+                    <input type="tel" id="contato_emergencia" name="contato_emergencia" maxlength="11"
+                        pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="(xx) xxxxx-xxxx" />
 
                     <label for="responsavel"> *Nome do responsável: </label>
                     <input type="text" id="responsavel" name="responsavel" /><br><br>
@@ -75,7 +105,7 @@
                     <input type="text" id="observacoes" name="observacoes" />
                 </fieldset>
 
-                <fieldset> 
+                <fieldset>
                     <legend><strong> Histórico </strong></legend>
 
                     <label for="doencas"> *Doenças pré existentes? </label>
@@ -90,24 +120,27 @@
                     <label for="cirurgias"> *Cirurgias anteriores? </label>
                     <input type="text" id="cirurgias" name="cirurgias" /><br><br>
 
-                    <label for="doencas_cronicas"> *Você possui alguma doença crônica? (Ex: Diabetes, Hipertensão, Asma) </label>
+                    <label for="doencas_cronicas"> *Você possui alguma doença crônica? (Ex: Diabetes, Hipertensão, Asma)
+                    </label>
                     <input type="text" id="doencas_cronicas" name="doencas_cronicas" /><br><br>
 
                     <label for="problemas_cardiacos"> *Possui algum problema cardíaco ou circulatório? </label>
                     <input type="text" id="problemas_cardiacos" name="problemas_cardiacos" /><br><br>
                 </fieldset>
 
-                <fieldset> 
+                <fieldset>
                     <legend><strong> Histórico </strong></legend>
 
                     *Como você avalia sua saúde atualmente?
-                    <input type="radio" id="saude_atual" name="saude_atual" value="Ex"/> Excelente 
-                    <input type="radio" id="saude_atual" name="saude_atual" value="Bo" /> Boa 
+                    <input type="radio" id="saude_atual" name="saude_atual" value="Ex" /> Excelente
+                    <input type="radio" id="saude_atual" name="saude_atual" value="Bo" /> Boa
                     <input type="radio" id="saude_atual" name="saude_atual" value="Re" /> Regular
                     <input type="radio" id="saude_atual" name="saude_atual" value="Ru" /> Ruim <br><br>
 
-                    <label for="insomnia"> *Tem dificuldade para dormir ou sofre insônia? </label>
-                    <input type="text" id="insomnia" name="insomnia" /><br><br>
+                    *Tem dificuldade para dormir ou sofre insônia?
+                    <input type="radio" id="insomnia" name="insomnia" value="Sim" /> Sim
+                    <input type="radio" id="insomnia" name="insomnia" value="Nao" /> Não
+                    <br><br>
 
                     <label for="alergias"> *Alergias? </label>
                     <input type="text" id="alergias" name="alergias" /><br><br>
@@ -126,8 +159,8 @@
 
                 </fieldset>
 
-                <input type="reset" value="Limpar campos"/>
-                <input type="submit" value="Enviar dados"/>
+                <input type="reset" value="Limpar campos" />
+                <input type="submit" value="Enviar dados" />
 
             </form>
 

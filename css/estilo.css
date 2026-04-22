@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+
+    margin: 20px auto;
+    padding: 40px;
+
+    width: 700px;
+    height: 400px;
+    
+    background-color: black;
+    color: white;
+
+    
+}
