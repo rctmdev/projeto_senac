@@ -10,113 +10,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senac - Index</title>
     <link rel="shortcut icon" href="img/imagem 01.jpeg" type="image/x-icon">
+    <link href="css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <!-- LOGOMARCA -->
-        <div>
-            <span>SS</span><span>Senac</span>
-        </div>
-        <!-- BARRA DE NAVEGAÇÃO -->
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="sobre.html">SOBRE</a>
-            <a href="servicos.html">SERVIÇOS</a>
-            <a href="contato.html">CONTATO</a>
-        </nav>
-        <!-- BOTÃO PARA A ÁREA DE CÁLCULOS DE SAÚDE -->
-        <a href="calc_saude.html" target="_blank"> Veja como anda sua saúde</a>
-        <!-- BOTÃO DE ACESSO AO SISTEMA PRINCIPAL -->
-        <a href="#" target="_blank">Acessar o Sistema</a>
-    </header>
 
-    <hr>
+    <div id="principal"> <!--inicio do corpo do html-->
 
-    <main>
+        <header class="header">
 
-        <section>
-            <h2>Conheça o nosso sistema</h2>
+            <div class="container">
 
-            <div>
-                <video width="820px" height="430px" controls autoplay muted loop>
-                    <source src="video/animacao_med.mp4" type="video/mp4" />
-                </video>
+                <div class="header-content">
+                    
+                    <!-- LOGOMARCA -->
+                    <div class="logo">
+                        <span class="primary-color">SS</span><span class="secondary-color">Senac</span>
+                    </div>
+                    
+                    <!-- BARRA DE NAVEGAÇÃO -->
+                    <nav class="nav-menu">
+                        <a href="index.html">HOME</a>
+                        <a href="sobre.html">SOBRE</a>
+                        <a href="servicos.html">SERVIÇOS</a>
+                        <a href="contato.html">CONTATO</a>
+                    </nav>
+                    
+                    <!-- BOTÃO PARA A ÁREA DE CÁLCULOS DE SAÚDE -->
+                    <a href="calc_saude.html" target="_blank" class="btn-saude"> Veja como anda sua saúde</a>
+                    
+                    <!-- BOTÃO DE ACESSO AO SISTEMA PRINCIPAL -->
+                    <a href="#" target="_blank" class="btn-login">Acessar o Sistema</a>
+                
+                </div>
 
             </div>
 
-        </section>
-        <section>
+        </header>
 
-            <h2>Nossa equipe de desenvolvedores</h2>
-            <figure>
-                <img src="img/dev1.png" width="200px" height="200px" title="Natasha"
-                    alt="Natasha, Analista de sistemas">
-                <figcaption>
-                    <strong>Natasha</strong> <br>
-                    <em>Analista de sistemas</em>
-                </figcaption>
-            </figure>
+       
 
-            <figure>
-                <img src="img/dev2.png" width="200px" height="200px" title="Mauro"
-                    alt="Mauro, Desenvolvedor de software">
-                <figcaption>
-                    <strong>Mauro</strong> <br>
-                    <em>Desenvolvedor de software</em>
-                </figcaption>
-            </figure>
+        <main>
 
-            <figure>
-                <img src="img/dev3.png" width="200px" height="200px" title="Carlos" alt="Carlos, Analista de suporte">
-                <figcaption>
-                    <strong>Carlos</strong> <br>
-                    <em>Analista de suporte</em>
-                </figcaption>
-            </figure>
+            <section>
+                <h2>Conheça o nosso sistema</h2>
 
-            <figure>
-                <img src="img/dev4.png" width="200px" height="200px" title="Michele" alt="Michele, Analista de qualidade (QA)">
-                <figcaption>
-                    <strong>Michele</strong> <br>
-                    <em>Analista de qualidade (QA)</em>
-                </figcaption>
-            </figure>
+                <div>
+                    <video width="820px" height="430px" controls autoplay muted loop>
+                        <source src="video/animacao_med.mp4" type="video/mp4" />
+                    </video>
+
+                </div>
+
+            </section>
+            <section>
+
+                <h2>Nossa equipe de desenvolvedores</h2>
+                <figure>
+                    <img src="img/dev1.png" width="200px" height="200px" title="Natasha"
+                        alt="Natasha, Analista de sistemas">
+                    <figcaption>
+                        <strong>Natasha</strong> <br>
+                        <em>Analista de sistemas</em>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/dev2.png" width="200px" height="200px" title="Mauro"
+                        alt="Mauro, Desenvolvedor de software">
+                    <figcaption>
+                        <strong>Mauro</strong> <br>
+                        <em>Desenvolvedor de software</em>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/dev3.png" width="200px" height="200px" title="Carlos"
+                        alt="Carlos, Analista de suporte">
+                    <figcaption>
+                        <strong>Carlos</strong> <br>
+                        <em>Analista de suporte</em>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/dev4.png" width="200px" height="200px" title="Michele"
+                        alt="Michele, Analista de qualidade (QA)">
+                    <figcaption>
+                        <strong>Michele</strong> <br>
+                        <em>Analista de qualidade (QA)</em>
+                    </figcaption>
+                </figure>
 
 
-        </section>
+            </section>
 
 
-    </main>
+        </main>
 
-    <hr>
+        <hr>
 
-    <footer>
-        <!-- ENDEREÇO -->
-        <div>
-            <h4>Localização</h4>
-            <address>
-                <p>Avenida Ayrton Senna, 123</p>
-                <p>Cidade Jardim, Natal/RN - CEP: 59000-000</p>
-                <p>
-                    Próximo ao <city>Shopping Mandacaru Mall</city>
-                </p>
-            </address>
-        </div>
-        <!-- HORÁRIO DE FUNCIONAMENTO -->
-        <div>
-            <h4>Horários de Funcionamento</h4>
-            <p>Segunda a Sexta:</p>
-            <p>9h às 18h</p>
-        </div>
-        <!-- CONTATO -->
-        <div>
-            <h4>Fale conosco</h4>
-            <p>Telefone: (84) 99404-4713</p>
-            <p>Email: contato@sssenac.com.br</p>
-            <p>Ou <a href="contato.html">envie-nos uma mensagem</a></p>
-        </div>
-    </footer>
+        <footer>
+            <!-- ENDEREÇO -->
+            <div>
+                <h4>Localização</h4>
+                <address>
+                    <p>Avenida Ayrton Senna, 123</p>
+                    <p>Cidade Jardim, Natal/RN - CEP: 59000-000</p>
+                    <p>
+                        Próximo ao <city>Shopping Mandacaru Mall</city>
+                    </p>
+                </address>
+            </div>
+            <!-- HORÁRIO DE FUNCIONAMENTO -->
+            <div>
+                <h4>Horários de Funcionamento</h4>
+                <p>Segunda a Sexta:</p>
+                <p>9h às 18h</p>
+            </div>
+            <!-- CONTATO -->
+            <div>
+                <h4>Fale conosco</h4>
+                <p>Telefone: (84) 99404-4713</p>
+                <p>Email: contato@sssenac.com.br</p>
+                <p>Ou <a href="contato.html">envie-nos uma mensagem</a></p>
+            </div>
+        </footer>
+
+    </div>
 </body>
 
 </html>
