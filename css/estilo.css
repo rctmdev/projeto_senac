@@ -8,17 +8,22 @@
     --light-bg-color: #f7fafc;
 
     --white-color: #fff;
+
+    --radius-medio: 8px;
+    --radius-pqno: 4px;
+    --radius-grande: 12px;
 }
 
+/* PRIMEIRA COISA A SE FAZER AO CRIAR UM SITE */
 * {
     box-sizing: border-box;
 }
-
+/* Retirar qualquer formatação dos browser */
 body {
     margin: 0;
     padding: 0;
 }
-
+/* DIV QUE ACOMPANHA O CONTEUDO DO CORPO (BODY) - NÃO É OBRIGATÓRIO, MAS É BOA PRÁTICA */
 #principal {
     margin: 0;
     padding: 0;
@@ -52,4 +57,79 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--alternative-color);
+}
+
+.logo span{
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    flex-grow: 1;
+    justify-content: center;
+    gap: 32px;
+    display: flex;
+}
+
+.nav-menu a {
+    font-weight: 600;
+    color: #4a5568;
+    transition: color 0.6s;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+} 
+
+.btn-saude {
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    font-weight: 600;
+    border-radius: var(--radius-medio);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: all 0.6s;
+}
+
+.btn-saude:hover {
+    transform: scale(1.05);
+}
+
+.btn-login {
+    background-color: var(--dark-bg-color);
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: var(--dark-bg-color);
+    color: #d1d5db;
+    margin-top: 48px;
+    padding: 40px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    text-align: left;
+}
+
+.footer-grid h4 {
+    front-weight: 700;
+    front-size: 20px;
+    color: var(--white-color);
+    margin-bottom: 16px;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 48px;
+    padding: 16px;
+    border-top: 1px solid #374151;
 }

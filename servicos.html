@@ -10,150 +10,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senac - Serviços</title>
     <link rel="shortcut icon" href="img/imagem 01.jpeg" type="image/x-icon">
+    <link href="css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <!-- LOGOMARCA -->
-        <div>
-            <span>SS</span><span>Senac</span>
-        </div>
-        <!-- BARRA DE NAVEGAÇÃO -->
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="sobre.html">SOBRE</a>
-            <a href="servicos.html">SERVIÇOS</a>
-            <a href="contato.html">CONTATO</a>
-        </nav>
-        <!-- BOTÃO PARA A ÁREA DE CÁLCULOS DE SAÚDE -->
-        <a href="calc_saude.html" target="_blank"> Veja como anda sua saúde</a>
-        <!-- BOTÃO DE ACESSO AO SISTEMA PRINCIPAL -->
-        <a href="#" target="_blank">Acessar o Sistema</a>
+    <div id="principal"> <!--inicio do corpo do html-->
 
-    </header>
+        <header class="header"> <!-- TAG SEMANTICA-->
 
-    <h1>PÁGINA DE SERVIÇOS</h1>
-    <section>
-        <h2>Nossos Planos</h2>
+            <div class="container"> <!-- TAG DE ALINHAMENTO-->
 
-        <table border="2">
+                <div class="header-content">
 
-            <thead> <!-- CABEÇALHO DA TABELA -->
+                    <!-- LOGOMARCA -->
+                    <div class="logo">
+                        SS<span>Senac</span>
+                    </div>
 
-                <tr> <!-- TABE ROW-->
-                    <th rowspan="2">Plano</th>
-                    <th rowspan="2">Preço</th>
-                    <th colspan="4">Funcionalidades</th>
-                    <th colspan="2">Suporte</th>
-                </tr>
+                    <!-- BARRA DE NAVEGAÇÃO -->
+                    <nav class="nav-menu">
+                        <a href="index.html">HOME</a>
+                        <a href="sobre.html">SOBRE</a>
+                        <a href="servicos.html">SERVIÇOS</a>
+                        <a href="contato.html">CONTATO</a>
+                    </nav>
 
-                <tr>
-                    <th>Prontuário</th>
-                    <th>Agendamentos</th>
-                    <th>Relatórios</th>
-                    <th>Multiusuário</th>
-                    <th>E-mail</th>
-                    <th>24hs</th>
-                </tr>
+                    <!-- BOTÃO PARA A ÁREA DE CÁLCULOS DE SAÚDE -->
+                    <a href="calc_saude.html" target="_blank" class="btn-saude"> Veja como anda sua saúde</a>
 
+                    <!-- BOTÃO DE ACESSO AO SISTEMA PRINCIPAL -->
+                    <a href="#" target="_blank" class="btn-saude btn-login">Acessar o Sistema</a>
 
-            </thead>
+                </div>
 
-            <tbody> <!-- CORPO COM OS DADOS DA TABELA -->
+            </div>
 
-                <tr>
-                    <td>Básico</td>
-                    <td>R$ 49</td>
-                    <td>✅</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>❌</td>
-                    <td>✅</td>
-                    <td>❌</td>
-                </tr>
+        </header>
 
-                <tr>
-                    <td>Profissional</td>
-                    <td>R$ 99</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>❌</td>
-                    <td>✅</td>
-                    <td>❌</td>
-                </tr>
+        <h1>PÁGINA DE SERVIÇOS</h1>
+        <section>
+            <h2>Nossos Planos</h2>
 
-                <tr>
-                    <td>Premium</td>
-                    <td>R$ 144</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>❌</td>
-                </tr>
+            <table border="2">
 
-                <tr>
-                    <td colspan="8">Inclui suporte prioritário, backup automático com laboratórios</td>
-                </tr>
+                <thead> <!-- CABEÇALHO DA TABELA -->
 
-                <tr>
-                    <td>Enterprise</td>
-                    <td>R$ 299</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                    <td>✅</td>
-                </tr>
+                    <tr> <!-- TABE ROW-->
+                        <th rowspan="2">Plano</th>
+                        <th rowspan="2">Preço</th>
+                        <th colspan="4">Funcionalidades</th>
+                        <th colspan="2">Suporte</th>
+                    </tr>
 
-                <tr>
-                    <td colspan="8">Inclui API, personalização completa e suporte dedicado</td>
-                </tr>
+                    <tr>
+                        <th>Prontuário</th>
+                        <th>Agendamentos</th>
+                        <th>Relatórios</th>
+                        <th>Multiusuário</th>
+                        <th>E-mail</th>
+                        <th>24hs</th>
+                    </tr>
 
 
-            </tbody>
+                </thead>
 
-            <tfoot>
-                <tr>
-                    <td colspan="8"> <em>Todos os planos incluem armazenamento e segurança de dados</em> </td>
-                </tr>
-            </tfoot>
+                <tbody> <!-- CORPO COM OS DADOS DA TABELA -->
 
-        </table>
+                    <tr>
+                        <td>Básico</td>
+                        <td>R$ 49</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                    </tr>
 
-    </section>
+                    <tr>
+                        <td>Profissional</td>
+                        <td>R$ 99</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                    </tr>
 
-    <hr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>R$ 144</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                    </tr>
 
-    <footer>
-        <!-- ENDEREÇO -->
-        <div>
-            <h4>Localização</h4>
-            <address>
-                <p>Avenida Ayrton Senna, 123</p>
-                <p>Cidade Jardim, Natal/RN - CEP: 59000-000</p>
-                <p>
-                    Próximo ao <city>Shopping Mandacaru Mall</city>
-                </p>
-            </address>
-        </div>
-        <!-- HORÁRIO DE FUNCIONAMENTO -->
-        <div>
-            <h4>Horários de Funcionamento</h4>
-            <p>Segunda a Sexta:</p>
-            <p>9h às 18h</p>
-        </div>
-        <!-- CONTATO -->
-        <div>
-            <h4>Fale conosco</h4>
-            <p>Telefone: (84) 99404-4713</p>
-            <p>Email: contato@sssenac.com.br</p>
-            <p>Ou <a href="contato.html">envie-nos uma mensagem</a></p>
-        </div>
-    </footer>
+                    <tr>
+                        <td colspan="8">Inclui suporte prioritário, backup automático com laboratórios</td>
+                    </tr>
+
+                    <tr>
+                        <td>Enterprise</td>
+                        <td>R$ 299</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="8">Inclui API, personalização completa e suporte dedicado</td>
+                    </tr>
+
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="8"> <em>Todos os planos incluem armazenamento e segurança de dados</em> </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <footer id="contato" class="footer"> <!--SEMANTICA-->
+
+            <div class="container"> <!--CONTAINER PARA ALINHAMENTO-->
+                
+                <div class="footer-grid">
+                    <!-- ENDEREÇO -->
+                    <div>
+                        <h4>Localização</h4>
+                        <address>
+                            <p>Avenida Ayrton Senna, 123</p>
+                            <p>Cidade Jardim, Natal/RN - CEP: 59000-000</p>
+                            <p>
+                                Próximo ao <city>Shopping Mandacaru Mall</city>
+                            </p>
+                        </address>
+                    </div>
+                    <!-- HORÁRIO DE FUNCIONAMENTO -->
+                    <div>
+                        <h4>Horários de Funcionamento</h4>
+                        <p>Segunda a Sexta:</p>
+                        <p>9h às 18h</p>
+                    </div>
+                    <!-- CONTATO -->
+                    <div>
+                        <h4>Fale conosco</h4>
+                        <p>Telefone: (84) 99404-4713</p>
+                        <p>Email: contato@sssenac.com.br</p>
+                        <p>Ou <a href="contato.html">envie-nos uma mensagem</a></p>
+                    </div>
+
+                </div>
+                <!--COPYRIGHT-->
+                <div class="footer-copyright"> 
+                    <p>
+                        &copy; Copyrigth 2026 Senac RN. Todos os direitos reservados. 
+                    </p>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
 </body>
 
 </html>
