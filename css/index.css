@@ -1,0 +1,78 @@
+@import url("estilo.css");
+
+main {
+    flex-grow: 1;
+}
+
+/* SEÇÃO HERO */
+
+.hero-section {
+    background-color: var(--dark-bg-color);
+    color: var(--white-color);
+    padding: 40px 0;
+
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.hero-text {
+    margin-bottom: 32px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+.hero-text span {
+    color: var(--primary-color);
+}
+
+.hero-text .secondary-text {
+    color: var(--secondary-color);
+}
+
+.hero-text p {
+    margin-top: 16px;
+    font-size: 20px;
+    color: #d1d5db;
+}
+
+.btn-hero {
+    margin-top: 32px;
+    padding: 12px 32px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 700;
+    border-radius: var(--radius-medio);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #4f46e5;
+    transform: translate(-2px);
+}
+
+.hero-video-container video{
+    border-radius: 24px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 1000px;
+    transition: transform 0.3s;
+}
+
+.hero-video-container video:hover{
+    transform: scale(1.05);
+}
