@@ -76,3 +76,67 @@ main {
 .hero-video-container video:hover{
     transform: scale(1.05);
 }
+/* COMEÇANDO A ÁREA DO ARTIGO E DA BARRA LATERAL DE ITENS RELACIONADOS */
+.extra{
+    padding: 40px 0;
+}
+
+.content-grid{
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
+.artigo-saude{
+    flex: 3;
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: var(--radius-grande);
+}
+
+.artigo-saude h2{
+    margin: 39px 0;
+}
+
+.artigo-saude p{
+    margin-bottom: 20px;
+}
+
+/* BARRA LATERAL DE ITENS RELACIONADOS */
+
+
+.desenvolvedores{
+    padding: 30px;
+    text-align: center;
+}
+
+.desenvolvedores h2{
+    margin-bottom: 20px;
+    color: var(--dark-bg-color);
+}
+
+.desenvolvedores figure{
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    background-color: var(--white-color);
+    border-radius: var(--radius-medio);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+}
+
+.desenvolvedores figure img{
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.desenvolvedores figure figcaption{
+    font-size: 14px;
+    color: var(--dark-bg-color);
+}
+
+.desenvolvedores figure:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s;
+}
+

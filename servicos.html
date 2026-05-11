@@ -10,11 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senac - Serviços</title>
     <link rel="shortcut icon" href="img/imagem 01.jpeg" type="image/x-icon">
-    <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/servicos.css" rel="stylesheet">
 </head>
 
 <body>
+
     <div id="principal"> <!--inicio do corpo do html-->
+
+        <a href="#">
+            <img src="img/whats.png" alt="Fale com o comercial via Whatsapp" title="Contato comercial">
+        </a>
 
         <header class="header"> <!-- TAG SEMANTICA-->
 
@@ -46,107 +51,206 @@
             </div>
 
         </header>
+        <main>
+            <section id="servicos" class="area-servicos"> <!--SEMANTICA-->
 
-        <h1>PÁGINA DE SERVIÇOS</h1>
-        <section>
-            <h2>Nossos Planos</h2>
+                <div class="container"> <!--CONTAINER PARA ALINHAMENTO-->
 
-            <table border="2">
+                    <div class="serv-content"> <!--INICIO DO CONTEUDO-->
 
-                <thead> <!-- CABEÇALHO DA TABELA -->
+                        <div class="titulo-servicos">
 
-                    <tr> <!-- TABE ROW-->
-                        <th rowspan="2">Plano</th>
-                        <th rowspan="2">Preço</th>
-                        <th colspan="4">Funcionalidades</th>
-                        <th colspan="2">Suporte</th>
-                    </tr>
+                            <h1> Nossos Serviços </h1>
 
-                    <tr>
-                        <th>Prontuário</th>
-                        <th>Agendamentos</th>
-                        <th>Relatórios</th>
-                        <th>Multiusuário</th>
-                        <th>E-mail</th>
-                        <th>24hs</th>
-                    </tr>
+                            <p>
+                                Conheça as soluções que o SSSenac oferece:
+                            </p>
+
+                        </div>
 
 
-                </thead>
+                        <div class="servicos">
 
-                <tbody> <!-- CORPO COM OS DADOS DA TABELA -->
+                            <figure>
+                                <img src="img/serv1.png" title="Agendamento" alt="Agendamento de consultas">
+                                <figcaption>
+                                    Agendamento fácil de consultas online
+                                </figcaption>
+                            </figure>
 
-                    <tr>
-                        <td>Básico</td>
-                        <td>R$ 49</td>
-                        <td>✅</td>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>❌</td>
-                        <td>✅</td>
-                        <td>❌</td>
-                    </tr>
+                            <figure>
+                                <img src="img/serv2.png" title="Acompanhamento Clínico" alt="Acompanhamento Clínico">
+                                <figcaption>
+                                    Tenha acesso ao seu histórico de saúde online
+                                </figcaption>
+                            </figure>
 
-                    <tr>
-                        <td>Profissional</td>
-                        <td>R$ 99</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>❌</td>
-                        <td>✅</td>
-                        <td>❌</td>
-                    </tr>
+                            <figure>
+                                <img src="img/serv3.png" title="Exames" alt="Consulta de exames">
+                                <figcaption>
+                                    Consulte de exames de forma segura e prática
+                                </figcaption>
+                            </figure>
 
-                    <tr>
-                        <td>Premium</td>
-                        <td>R$ 144</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>❌</td>
-                    </tr>
+                            <figure>
+                                <img src="img/serv4.png" title="Atendimento" alt="Atendimento Especializado">
+                                <figcaption>
+                                    Fale com profissionais de suporte qualificado
+                                </figcaption>
+                            </figure>
 
-                    <tr>
-                        <td colspan="8">Inclui suporte prioritário, backup automático com laboratórios</td>
-                    </tr>
-
-                    <tr>
-                        <td>Enterprise</td>
-                        <td>R$ 299</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                        <td>✅</td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="8">Inclui API, personalização completa e suporte dedicado</td>
-                    </tr>
+                        </div>
 
 
-                </tbody>
+                        <div class="destaque-servicos">
+                            <h2> Por que escolher o SSSenac?</h2>
+                            <p>
+                                O nosso sistema foi desenvolvido para facilitar o acesso à saúde, oferecendo
+                                praticidade, segurança e acompanhemento contínuo.
+                            </p>
 
-                <tfoot>
-                    <tr>
-                        <td colspan="8"> <em>Todos os planos incluem armazenamento e segurança de dados</em> </td>
-                    </tr>
-                </tfoot>
+                            <a href="#" class="btn-saude">Saiba mais</a>
 
-            </table>
+                        </div>
 
-        </section>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section id="planos" class="area-planos"> <!--SEMANTICA-->
+
+                <div class="container">
+
+                    <div class="planos-content">
+
+                        <div>
+
+                            <h2>Nossos Planos</h2>
+
+                            <table>
+
+                                <thead> <!-- CABEÇALHO DA TABELA -->
+
+                                    <tr> <!-- TABE ROW-->
+                                        <th rowspan="2">Plano</th>
+                                        <th rowspan="2">Preço</th>
+                                        <th colspan="4">Funcionalidades</th>
+                                        <th colspan="2">Suporte</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Prontuário</th>
+                                        <th>Agendamentos</th>
+                                        <th>Relatórios</th>
+                                        <th>Multiusuário</th>
+                                        <th>E-mail</th>
+                                        <th>24hs</th>
+                                    </tr>
+
+
+                                </thead>
+
+                                <tbody> <!-- CORPO COM OS DADOS DA TABELA -->
+
+                                    <tr>
+                                        <td>Básico</td>
+                                        <td>R$ 49</td>
+                                        <td>✅</td>
+                                        <td>❌</td>
+                                        <td>❌</td>
+                                        <td>❌</td>
+                                        <td>✅</td>
+                                        <td>❌</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Profissional</td>
+                                        <td>R$ 99</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>❌</td>
+                                        <td>✅</td>
+                                        <td>❌</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Premium</td>
+                                        <td>R$ 144</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>❌</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="8">Inclui suporte prioritário, backup automático com laboratórios
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Enterprise</td>
+                                        <td>R$ 299</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                        <td>✅</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="8">Inclui API, personalização completa e suporte dedicado</td>
+                                    </tr>
+
+
+                                </tbody>
+
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="8"> <em>Todos os planos incluem armazenamento e segurança de
+                                                dados</em>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+
+                            </table>
+
+                        </div>
+
+                        <aside class="sidebar">
+
+                            <h3> Serviços rápidos: </h3>
+
+                            <ul><!--LISTA DE ITENS NÃO ORDENADOS-->
+                                <li><a href="#"> Agendamento de consultas </a></li>
+                                <li><a href="#"> Visualizar atendimentos </a></li>
+                                <li><a href="#"> Histórico clínico </a></li>
+                                <li><a href="#"> Falar com um especialista </a></li>
+                            </ul>
+
+                        </aside>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
 
         <hr>
 
         <footer id="contato" class="footer"> <!--SEMANTICA-->
 
             <div class="container"> <!--CONTAINER PARA ALINHAMENTO-->
-                
+
                 <div class="footer-grid">
                     <!-- ENDEREÇO -->
                     <div>
@@ -175,9 +279,9 @@
 
                 </div>
                 <!--COPYRIGHT-->
-                <div class="footer-copyright"> 
+                <div class="footer-copyright">
                     <p>
-                        &copy; Copyrigth 2026 Senac RN. Todos os direitos reservados. 
+                        &copy; Copyrigth 2026 Senac RN. Todos os direitos reservados.
                     </p>
                 </div>
 

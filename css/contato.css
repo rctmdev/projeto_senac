@@ -1,0 +1,76 @@
+@import url("estilo.css");
+
+main > div {
+    background-color: var(--dark-bg-color);
+    color: var(--white-color);
+    padding: 40px 0;
+    text-align: center;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 30px 0;
+}
+
+.form-content div {
+    flex: 3;
+    background-color: var(--white-color);
+    border-radius: var(--radius-grande);
+    padding: 20px;
+}
+
+form {
+    padding: 20px;
+    border-radius: var(--radius-medio--);
+    background-color: var(--white-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    border: 1px solid var(--dark-bg-color);
+    padding: 15px;
+}
+
+legend {
+    padding: 0 15px;
+    font-weight: bold;
+    color: var(--dark-bg-color);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: auto;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: var(--dark-bg-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: var(--radius-pqno);
+    transition: all 0.3s;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+}

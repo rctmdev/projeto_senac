@@ -1,0 +1,37 @@
+@import url("estilo.css");
+
+.sobre-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 30px 0;
+}
+
+.sobre-content > div {
+    flex: 3;
+    background-color: var(--white-color);
+    padding: 25px;
+    border-radius: var(--radius-grande);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--dark-bg-color);
+}
+
+.sobre-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+blockquote {
+    background-color: var(--light-bg-color);
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: var(--radius-pqno);
+    font-style: italic;
+    border-left: 4px solid var(--dark-bg-color);
+}
+
